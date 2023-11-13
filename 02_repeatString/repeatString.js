@@ -24,6 +24,7 @@ const number = Math.floor(Math.random() * 1000);
 
 
 console.log(repeatString('hey', number).match(/((hey))/g).length);
+console.log(repeatString('',3));
 
 
 
