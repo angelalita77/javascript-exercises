@@ -20,5 +20,12 @@ console.log(repeatString('hey',1));
 console.log(repeatString('hey',0));
 console.log(repeatString('hey',-1));
 
+const number = Math.floor(Math.random() * 1000);
+
+
+console.log(repeatString('hey', number).match(/((hey))/g).length);
+
+
+
 // Do not edit below this line
 module.exports = repeatString;
