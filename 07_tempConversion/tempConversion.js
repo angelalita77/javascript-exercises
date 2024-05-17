@@ -1,15 +1,19 @@
 const convertToCelsius = function(fahrenheit) {
   let celsius = (fahrenheit - 32) * (5 / 9);
-  return console.log(celsius.toFixed(1));
-};
+  if (Math.trunc(celsius) - celsius !== 0) {
+  return celsius.toFixed(1); }
+  else {
+    return celsius;
+  }
+}
 
 const convertToFahrenheit = function(celsius) {
   let fahrenheit = (celsius * (9 / 5)) + 32;
-  return console.log(fahrenheit.toFixed(1));
+  return fahrenheit;
 };
 
-convertToCelsius(32);
-convertToCelsius(100);
+console.log(convertToCelsius(32));
+console.log(convertToCelsius(100));
 
 
 // Do not edit below this line
